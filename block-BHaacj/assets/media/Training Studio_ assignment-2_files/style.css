@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* general style */
+body {
+  font-family: "Poppins", sans-serif;
+  font: 16px;
+  line-height: 1.5;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header */
+/* header {
+  background-size: cover;
+} */
+video {
+  width: 100%;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  position: relative;
+  z-index: 999;
+}
+.brand-name a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.brand-name a strong {
+  color: #e7573d;
+}
+.nav a {
+  color: white;
+  text-transform: uppercase;
+  padding: 12px;
+  font-size: 14px;
+}
+.btn-home a {
+  color: #e7573d;
+}
+/* practice */
+#myVideo {
+  /* position: fixed;
+  right: 0;
+  bottom: 0; */
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* hero-section */
+.hero-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.hero {
+  margin: 300px auto;
+  text-align: center;
+}
+.hero-section p {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hero-section h1 {
+  color: white;
+  padding: 15px 0;
+  font-size: 56px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hero-section h1 strong {
+  color: #e7573d;
+}
+.btn-member {
+  background-color: #e7573d;
+  border: none;
+  padding: 12px;
+}
+.btn-member a {
+  text-transform: uppercase;
+  color: white;
+  padding: 12px;
+}
+
+/* Program section */
+.article-program {
+  text-align: center;
+}
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h3 strong {
+  color: #e7573d;
+}
+.program-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.program-col1 {
+  padding: 20px 18px;
+  text-align: left;
+  border: 1px solid black;
+  width: 50%;
+}
+.program-col1 img {
+  padding-right: 24px;
+}
+h4 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.program-col1 p {
+  font-size: 12px;
+}
+.program-col1 a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #e7573d;
+}
+/* Begin today section */
+.section-today {
+  background: url(../media/cta-bg.jpg);
+  text-align: center;
+  height: 300px;
+  background-size: cover;
+}
+.section-today h5 {
+  padding-top: 75px;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h5 strong {
+  color: #e7573d;
+}
+.section-today p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: white;
+}
+/* Our classes section */
+.our-class-section {
+  border: 1px solid black;
+}
+.our-article {
+  border: 1px solid black;
+}
+.article-class {
+  text-align: center;
+}
+.article-class p {
+  padding-bottom: 60px;
+  font-size: 14px;
+}
+.our-class-box {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.class-col1 {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 22px;
+  border-radius: 5px;
+}
+.class-col1 a {
+  padding-left: 16px;
+  text-transform: capitalize;
+}
+.btn-schedule {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  text-transform: capitalize;
+  background-color: #e7573d;
+  border-radius: 5px;
+}
+.btn-schedule a {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.class-col2 {
+  width: 580px;
+}
+.class-col2 img {
+  border-radius: 5px;
+}
+.class-col2 h4 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.class-col2 p {
+  font-size: 14px;
+}
+
+.btn-col2-schedule {
+  padding: 12px;
+  background-color: #e7573d;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.btn-col2-schedule a {
+  color: white;
+  font-size: 11px;
+}
+/* Schedule-section */
+.schedule-section {
+  /* background: url(../media/schedule-bg.jpg); */
+  background-size: cover;
+  height: 700px;
+}
+/* table */
+table {
+  text-transform: capitalize;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+/* caption {
+  padding: 20px;
+} */
+caption a {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+td {
+  width: 200px;
+  padding: 30px 12px;
+  border: 1px solid black;
+}
+/* Section Expert-trainers */
+.trainer-box {
+  display: flex;
+}
+.trainer-box p {
+  font-size: 14px;
+}
+.trainer-box article {
+  border: 1px solid black;
+}
+
+.relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(84, 93, 100, 0.5);
+}
